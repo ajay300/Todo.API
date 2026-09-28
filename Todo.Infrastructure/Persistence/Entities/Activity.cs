@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Todo.Infrastructure.Persistence.Entities
+﻿namespace Todo.Infrastructure.Persistence.Entities
 {
     public class Activity : BaseEntity
     {
         public string EntityName { get; set; }
+
         public Guid EntityId { get; set; }
 
         public string Action { get; set; }
+
         public string PerformedBy { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         public string OldValues { get; set; }
+
         public string NewValues { get; set; }
     }
 }
